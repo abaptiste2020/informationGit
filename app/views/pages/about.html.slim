@@ -1,0 +1,122 @@
+.row-fluid.sortable
+  .box.span12
+    .box-header[data-original-title]
+      h2
+        i.halflings-icon.white.user
+        | <span 
+      .box-icon
+        a.btn-setting[href="#"]
+          i.halflings-icon.white.wrench
+        a.btn-minimize[href="#"]
+          i.halflings-icon.white.chevron-up
+        a.btn-close[href="#"]
+          i.halflings-icon.white.remove
+    .box-content
+      table#data.table.table-striped.table-bordered.bootstrap-datatable.datatable
+        thead
+          tr
+            th
+              | First Name
+            th
+              | Last Name
+            th
+              | Phone
+            th
+              | Status
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger[value="Delete" onclick="deleteRow(this)"]
+                i.fa.fa-trash-o.fa
+        tbody
+          tr
+            td
+              | Dennis Ji
+            td.center
+              | 2011
+            td.center
+              | Airman and Family Readiness Center
+            td.center
+              span.label.label-success
+                | Mutable
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger
+                i.fa.fa-trash-o.fa
+
+          tr
+            td
+              | Dennis Ji
+            td.center
+              | 2011
+            td.center
+              | Military Resources
+            td.center
+              span.label.label-success
+                | Mutable
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger[href="#"]
+                i.fa.fa-trash-o.fa
+          tr
+            td
+              | Dennis Ji
+            td.center
+              | 2011
+            td.center
+              | Community Resources
+            td.center
+              span.label.label-success
+                | Mutable
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger[href="#"]
+                i.fa.fa-trash-o.fa
+          tr
+            td
+              | Dennis Ji
+            td.center
+              | 2012
+            td.center
+              | MacDill Family Housing
+            td.center
+              span.label.label-success
+                | Mutable
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger[href="#"]
+                i.fa.fa-trash-o.fa
+          tr
+            td
+              | Dennis Ji
+            td.center
+              | 2012
+            td.center
+              | Quick Reference Phone Directory
+            td.center
+              span.label.label-important
+                | Immutable
+            td.center
+              a.btn.btn-success[href="#"]
+                i.fa.fa-expand.fa
+              a.btn.btn-info[href="#"]
+                i.fa.fa-wrench.fa
+              a.btn.btn-danger[href="#"]
+                i.fa.fa-trash-o.fa
+      .pull-right
+        input.top-buffer[type="button" value="Add" onclick="addRow('data')"]
+
