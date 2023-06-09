@@ -1,11 +1,41 @@
 p style="color: green" = notice
 
 h1 Profiles
-
-#profiles
-  - @profiles.each do |profile|
-    == render profile
-    p
-      = link_to "Show this profile", profile
-
-= link_to "New profile", new_profile_path
+.row-fluid.sortable
+  .box-header[data-original-title]
+    h2
+      i.halflings-icon.white.user
+    .box-icon
+      a.btn-setting[href="#"]
+        i.halflings-icon.white.wrench
+      a.btn-minimize[href="#"]
+        i.halflings-icon.white.chevron-up
+      a.btn-close[href="#"]
+        i.halflings-icon.white.remove
+  .box-content
+    table#data.table.table-striped.table-bordered.bootstrap-datatable.datatable
+      thead
+        tr
+          th
+            | First Name
+          th
+            | Last Name
+          th
+            | Phone
+          th
+            | Email
+          th
+            | Profile Options
+          td.center
+            a.btn.btn-success[href="#"]
+              i.fa.fa-expand.fa
+            a.btn.btn-info[href="#"]
+              i.fa.fa-wrench.fa
+            a.btn.btn-danger
+              i.fa.fa-trash-o.fa         
+      tbody
+        #profiles
+          - @profiles.each do |profile|
+            == render profile
+        th 
+          = link_to "New profile", new_profile_path

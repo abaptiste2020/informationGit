@@ -1,13 +1,46 @@
 div id="#{dom_id profile}"
-  p
-    strong First name:
-    =< profile.first_name
-  p
-    strong Last name:
-    =< profile.last_name
-  p
-    strong Email:
-    =< profile.email
-  p
-    strong Phone:
-    =< profile.phone
+  tr
+    td
+      =< profile.first_name
+    td.center
+      =< profile.last_name
+    td.center
+      =< profile.phone
+    td.center
+      =< profile.email
+    td.center
+      #profiles
+      span.label.label-success
+        = link_to "Show this profile", profile
+    td.center
+      a.btn.btn-success[href="#"]
+        i.fa.fa-expand.fa     
+      a.btn.btn-info[href="#"]
+        i.fa.fa-wrench.fa
+      a.btn.btn-danger
+        i.fa.fa-trash-o.fa
+                    
+/.container
+  .main-body
+    .row
+      .card
+        .card-body id="#{dom_id profile}"
+          .d-flex.flex-column.align-items-center.text-center
+            img.rounded-circle.p-1.bg-primary[src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Admin" width="110"]
+            .mt-3
+              h4
+                =< profile.first_name
+              h5
+                =< profile.last_name                
+              p.text-secondary.mb-1
+                =< profile.phone
+              p.text-muted.font-size-sm
+                =< profile.email
+              button.btn.btn-primary
+                | Follow
+              button.btn.btn-outline-primary
+                | Message
+
+
+             
+          
