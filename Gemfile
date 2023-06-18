@@ -10,6 +10,9 @@ gem "slim"
 
 gem 'slim-rails'
 
+#use for mongodb
+gem 'mongoid'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
