@@ -3,9 +3,9 @@ lock "~> 3.17.3"
 
 require 'capistrano-db-tasks'
 
-set :application, "informationGit"
+set :application, "aws-rails"
 set :repo_url, "git@github.com:abaptiste2020/informationGit.git"
-set :deploy_to, '/home/deploy2/informationGit'
+set :deploy_to, '/home/deploy/aws-rails'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 set :linked_files, %w{config/database.yml config/master.key}

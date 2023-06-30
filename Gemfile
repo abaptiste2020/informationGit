@@ -13,6 +13,9 @@ gem 'slim-rails'
 #use for mongodb
 gem 'mongoid'
 
+#gem 'net-ssh'
+
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
